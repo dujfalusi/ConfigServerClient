@@ -6,16 +6,15 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 public class BeanConfiguration {
-	private int  minResultados;
-	private int maxResultados;		
-	private String valorFijo;
-	private String valorFuncion;
-	
-	public  BeanConfiguration(int minResultado,int maxResultado,String valorFijo,String valorFuncion)
-	{
-		this.minResultados=minResultado;
-		this.maxResultados=maxResultado;
-		this.valorFijo=valorFijo;
-		this.valorFuncion=valorFuncion;
-	}
+  private int minResults;
+  private int maxResults;
+  private String permanentValue;
+  private String functionValue;
+
+  public BeanConfiguration(int minResults, int maxResults, String permanentValue, String functionValue) {
+    this.minResults = minResults;
+    this.maxResults = maxResults;
+    this.permanentValue = permanentValue;
+    this.functionValue = functionValue;
+  }
 }

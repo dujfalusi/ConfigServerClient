@@ -9,11 +9,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class ConfigServiceController {
 
-  @Value("${valores.valor_fijo}")
-  String valorFijo;
+  @Value("${values.permanent_value}")
+  String permanentValue;
 
-  @Value("${valores.valor_funcion}")
-  String valorFuncion;
+  @Value("${values.function_value}")
+  String functionValue;
 
   @Autowired
   private Configuration configuration;
@@ -21,20 +21,20 @@ public class ConfigServiceController {
   @Autowired
   private ConfigurationData configurationData;
 
-  @GetMapping("/limites")
-  public BeanConfiguration getConfiguracion() {
+  @GetMapping("/limits")
+  public BeanConfiguration getConfiguration() {
     return new BeanConfiguration(configuration.getMinimum(),
-            configuration.getMaximum(), valorFijo, valorFuncion);
+            configuration.getMaximum(), permanentValue, functionValue);
   }
 
-  @GetMapping("/refrescado")
-  public BeanConfiguration getConfiguracionRefrescada(@Value("${valores.valor_funcion}") String valorFuncion) {
+  @GetMapping("/refreshed")
+  public BeanConfiguration getConfigurationRefreshed(@Value("${values.function_value}") String functionValue) {
     return new BeanConfiguration(configuration.getMinimum(),
-            configuration.getMaximum(), valorFijo, valorFuncion);
+            configuration.getMaximum(), permanentValue, functionValue);
   }
 
-  @GetMapping("/datos")
-  public ConfigurationData retrieveDatosFromConfigurations() {
+  @GetMapping("/data")
+  public ConfigurationData retrieveDataFromConfiguration() {
     return configurationData;
   }
 
