@@ -1,0 +1,47 @@
+{
+  "groups": [
+    {
+      "name": "datosservidor",
+      "type": "com.profesorp.configclient.ConfigurationData",
+      "sourceType": "com.profesorp.configclient.ConfigurationData"
+    },
+    {
+      "name": "limites",
+      "type": "com.profesorp.configclient.Configuration",
+      "sourceType": "com.profesorp.configclient.Configuration"
+    }
+  ],
+  "properties": [
+    {
+      "name": "datosservidor.maximum",
+      "type": "java.lang.Integer",
+      "sourceType": "com.profesorp.configclient.ConfigurationData",
+      "defaultValue": 0
+    },
+    {
+      "name": "datosservidor.minimum",
+      "type": "java.lang.Integer",
+      "sourceType": "com.profesorp.configclient.ConfigurationData",
+      "defaultValue": 0
+    },
+    {
+      "name": "limites.maximum",
+      "type": "java.lang.Integer",
+      "sourceType": "com.profesorp.configclient.Configuration",
+      "defaultValue": 0
+    },
+    {
+      "name": "limites.minimum",
+      "type": "java.lang.Integer",
+      "sourceType": "com.profesorp.configclient.Configuration",
+      "defaultValue": 0
+    },
+    {
+      "name": "limites.otro-dato",
+      "type": "java.lang.Integer",
+      "sourceType": "com.profesorp.configclient.Configuration",
+      "defaultValue": 0
+    }
+  ],
+  "hints": []
+}

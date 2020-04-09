@@ -1,0 +1,6 @@
+com\profesorp\configclient\bean\BeanConfiguration.class
+com\profesorp\configclient\Configuration.class
+com\profesorp\configclient\ConfigurationData.class
+com\profesorp\configclient\ServiceApplication.class
+com\profesorp\configclient\ConfigServiceController.class
+META-INF\spring-configuration-metadata.json
